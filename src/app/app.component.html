@@ -1,0 +1,27 @@
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    src="assets\images\eleclogo.png"
+    routerLink=""
+    class="rounded-3"
+    />
+  <span>Manual Test</span>
+  <div class="spacer"></div>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>settings</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="login">
+      <mat-icon>account_circle</mat-icon>
+      <span>Iniciar sesion</span>
+    </button>
+    <button mat-menu-item (click)="salir()">
+      <mat-icon>logout</mat-icon>
+      <span>Salir</span>
+    </button>
+  </mat-menu>
+</div>
+
+<router-outlet></router-outlet>

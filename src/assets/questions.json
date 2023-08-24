@@ -1,0 +1,165 @@
+{
+    "questions": [{
+            "questionText": "¿Cuál de los siguientes dispositivos protege un circuito eléctrico al interrumpir la corriente cuando detecta una sobrecarga o cortocircuito?",
+            "options": [{
+                    "text": "Fusible",
+                    "correct": true
+                },
+                {
+                    "text": "Reóstato"
+                },
+                {
+                    "text": "Amperímetro"
+                },
+                {
+                    "text": "Voltímetro"
+                }
+            ],
+            "explanation": "TS uses a colon (:) to separate the property name from the property type"
+        },
+        {
+            "questionText": "¿Qué es un conductor eléctrico?",
+            "options": [{
+                    "text": " Material que no permite el flujo de electricidad"
+                },
+                {
+                    "text": "Material que regula el flujo de electricidad"
+                },
+                {
+                    "text": "Material que almacena electricidad"
+                },
+                {
+                    "text": "Material que permite el flujo de electricidad",
+                    "correct": true
+                }
+            ],
+            "explanation": "enum is not used as a type in TypeScript"
+        },
+        {
+            "questionText": "¿Cuál es la unidad de medida de la resistencia eléctrica?",
+            "options": [{
+                    "text": "Voltio (V)"
+                },
+                {
+                    "text": "UOhmio (Ω)",
+                    "correct": true
+                },
+                {
+                    "text": "Amperio (A)"
+                },
+                {
+                    "text": "Julio (J)"
+                }
+            ],
+            "explanation": "interfaces are typically used to list the properties and methods for an object"
+        },
+        {
+            "questionText": "¿Qué componente se utiliza para almacenar carga eléctrica en un circuito?",
+            "options": [{
+                    "text": "Resistencia"
+                },
+                {
+                    "text": "Condensador",
+                    "correct": true
+                },
+                {
+                    "text": "Transistor"
+                },
+                {
+                    "text": "Diodo"
+                }
+            ],
+            "explanation": "number[] is another way of writing Array<number> in TypeScript"
+        },
+        {
+            "questionText": "¿Qué tipo de corriente fluye constantemente en una sola dirección?",
+            "options": [{
+                    "text": "Corriente continua",
+                    "correct": true
+                },
+                {
+                    "text": " Corriente alterna"
+                },
+                {
+                    "text": "Corriente pulsante"
+                },
+                {
+                    "text": "Corriente inversa"
+                }
+            ],
+            "explanation": "a constructor is used by a class to take in parameters"
+        },
+        {
+            "questionText": "¿Qué dispositivo se utiliza para medir la diferencia de potencial eléctrico entre dos puntos?",
+            "options": [{
+                    "text": "Multímetro"
+                },
+                {
+                    "text": "Amperímetro"
+                },
+                {
+                    "text": "Osciloscopio"
+                },
+                {
+                    "text": "Voltímetro",
+                    "correct": true
+                }
+            ],
+            "explanation": "async is not used as an access modifier type in TypeScript"
+        },
+        {
+            "questionText": "¿Qué se debe hacer antes de realizar reparaciones eléctricas en una instalación?",
+            "options": [{
+                    "text": "Desconectar el disyuntor"
+                },
+                {
+                    "text": "Apagar la alimentación eléctrica",
+                    "correct": true
+                },
+                {
+                    "text": "Usar guantes de látex"
+                },
+                {
+                    "text": "Pintar las paredes"
+                }
+            ],
+            "explanation": "the export keyword allows for the information to be transmitted between files"
+        },
+        {
+            "questionText": "¿Qué color se utiliza generalmente para identificar el cable neutro en una instalación eléctrica?",
+            "options": [{
+                    "text": "Azul",
+                    "correct": true
+                },
+                {
+                    "text": "Verde"
+                },
+                {
+                    "text": "Rojo"
+                },
+                {
+                    "text": "Negro"
+                }
+            ],
+            "explanation": "filter is a method used to conditionally create a new array"
+        },
+        {
+            "questionText": "¿Cuál es la unidad de medida de la potencia eléctrica?",
+            "options": [{
+                    "text": "Vatio (W)",
+                    "correct": true
+                },
+                {
+                    "text": " Voltio (V)"
+                },
+                {
+                    "text": "Amperio (A)"
+                },
+                {
+                    "text": "Ohmio (Ω)"
+                }
+            ],
+            "explanation": "this.propertyName is the way to access a specific property within a class"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+<div class="content row justify-content-center" role="main">
+
+    <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Iniciar sesion</mat-card-title>
+          <mat-card-subtitle>Ingresas las credenciales de administrador</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <form [formGroup]="nameForm" (ngSubmit)="start()" >
+                <div class="name row col-10 col-md-6 p-2">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Usuario</mat-label>
+                    <input #name matInput formControlName="email" type="text" class="form-control" placeholder="usuario">
+                    <mat-hint>*Campo requerido</mat-hint>
+                  </mat-form-field>
+                </div>
+                <div class="name row col-10 col-md-6 p-2">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Contrasena</mat-label>
+                      <input #pass matInput formControlName="password" type="password" class="form-control" placeholder="contrasenia">
+                      <mat-hint>*Campo requerido</mat-hint>
+                    </mat-form-field>
+                  </div>
+                <button mat-raised-button [disabled]="!nameForm.valid" color="primary" type="submit" class="col-6 col-md-4 p-2">Ingresar</button>
+              </form>
+        </mat-card-content>
+        <mat-card-actions class="row justify-content-end">
+          <button mat-button class="col-5" (click)="back()">Regresar</button>
+        </mat-card-actions>
+      </mat-card>
+
+
+</div>

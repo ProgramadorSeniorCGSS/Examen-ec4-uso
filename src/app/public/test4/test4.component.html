@@ -1,0 +1,24 @@
+<div class="content" role="main">
+
+    <div class="container col-12 bg-light py-5 rounded-3">
+        <h1 class="display-5 fw-bold">Prueba de conocimentos del Manual de electricistas de Cuarta categoria de la Universidada de Sonsonate</h1>
+        <p class="col-md-8 fs-4">Un total de 20 preguntas extraidas del manual.</p>
+        <ol>
+            <li>Sugerimos leer completamente el manual antes de realizar la prueba</li>
+            <li>Tendras un total de 60 segundos para resolver cada pregunta</li>
+            <li>Recuerda que es solo una prueba para evaluar tus conocimentos, preparandote para el examen presencial</li>
+        </ol>
+        <h2 style="text-align:center">Buena suerte</h2>
+        <form [formGroup]="nameForm" (ngSubmit)="startQuiz()">
+            <div class="name row col-8 p-2">
+              <mat-form-field appearance="outline">
+                <mat-label>Ingresa su nombre:</mat-label>
+                <input #name matInput formControlName="name" type="text" class="form-control" placeholder="Nombre">
+                <mat-hint>*Campo requerido</mat-hint>
+              </mat-form-field>
+            </div>
+            <button mat-raised-button [disabled]="!nameForm.valid" type="submit">Empezar el examen</button>
+          </form>
+    </div>
+
+</div>

@@ -1,0 +1,58 @@
+<div class="modal-header">
+    <h4 class="modal-title"><strong>Editar pregunta</strong></h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+    <form [formGroup]="Form" (ngSubmit)="editar()">
+        <div class="row col-12">
+            <mat-form-field appearance="outline">
+              <mat-label>Pregunta</mat-label>
+              <textarea matInput formControlName="questionText" class="form-control" placeholder="Pregunta"></textarea>
+            </mat-form-field>
+          </div>          
+        <p><strong>Respuestas:</strong></p>
+        <div class="row col-12">
+            <mat-form-field appearance="outline">
+                <mat-label>Respuesta 1</mat-label>
+                <input matInput formControlName="option1" type="text" class="form-control" placeholder="Respuesta 1" />
+            </mat-form-field>
+        </div>
+        <div class="row col-12">
+            <mat-form-field appearance="outline">
+                <mat-label>Respuesta 2</mat-label>
+                <input matInput formControlName="option2" type="text" class="form-control" placeholder="Respuesta 1" />
+            </mat-form-field>
+        </div>
+        <div class="row col-12">
+            <mat-form-field appearance="outline">
+                <mat-label>Respuesta 3</mat-label>
+                <input matInput formControlName="option3" type="text" class="form-control" placeholder="Respuesta 1" />
+            </mat-form-field>
+        </div>
+        <div class="row col-12">
+            <mat-form-field appearance="outline">
+                <mat-label>Respuesta 4</mat-label>
+                <input matInput formControlName="option4" type="text" class="form-control" placeholder="Respuesta 1" />
+            </mat-form-field>
+        </div>
+        <div class="radio-group">
+            <p><strong>Respuesta correcta:</strong></p>
+            <mat-radio-group aria-label="Seleccione una opcion" formControlName="correct" [value]="correctIndex">
+                <mat-radio-button [value]="1">Respuesta 1</mat-radio-button>
+                <mat-radio-button [value]="2">Respuesta 2</mat-radio-button>
+                <mat-radio-button [value]="3">Respuesta 3</mat-radio-button>
+                <mat-radio-button [value]="4">Respuesta 4</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="text-end row justify-content-between p-2">
+            <button mat-raised-button color="warn" type="button" class="col-6 col-md-4 p-2" (click)="eliminar()">
+                Eliminar
+            </button>
+            <button mat-raised-button [disabled]="!Form.valid" color="primary" type="submit" class="col-6 col-md-4 p-2">
+                Editar
+            </button>
+
+        </div>
+        
+    </form>
+</div>
